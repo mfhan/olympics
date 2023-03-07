@@ -97,6 +97,7 @@ colormap_vals = [(0, colors[0]), *[(colormap_vals[i], colors[i + 1]) for i in ra
 # In[12]:
 
 
+
 fig = px.choropleth(
     df,
     locations="country",
@@ -111,6 +112,7 @@ fig = px.choropleth(
 
 fig.show() 
 
+st.plotly_chart(fig, use_container_width=False, sharing="streamlit", theme="streamlit")
 
 # In[13]:
 
